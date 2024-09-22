@@ -1,0 +1,42 @@
+{
+  "main": "expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^14.0.2",
+    "@react-native-async-storage/async-storage": "^1.23.1",
+    "@react-navigation/native": "^6.1.7",
+    "@react-navigation/stack": "^6.3.16",
+    "@supabase/supabase-js": "^2.9.0",
+    "expo": "~51.0.28",
+    "expo-status-bar": "~1.12.1",
+    "react": "^18.3.1",
+    "react-native": "^0.75.3",
+    "react-native-gesture-handler": "~2.16.1",
+    "react-native-paper": "^5.10.0",
+    "react-native-reanimated": "~3.10.1",
+    "react-native-safe-area-context": "4.10.5",
+    "react-native-screens": "3.31.1",
+    "selenium-webdriver": "^4.24.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^12.7.2",
+    "jest": "^29.7.0",
+    "react-test-renderer": "^18.3.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js",
+      "@testing-library/jest-native/extend-expect"
+    ]
+  },
+  "private": true
+}
