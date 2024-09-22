@@ -21,7 +21,7 @@ describe('Testar Login', () => {
     cy.get('.r-margin-jgcjvd > .css-text-146c3p1').should("contain.text", "Usuário ou Senha Incorretos")
   })
 
-  it('Deve recusar login com email e senha incorretos', () => {
+  it('Deve logar no sistema', () => {
 
     cy.fixture('loginCorreto.json').then(data => {
       // Mockar chamada para o supabase
