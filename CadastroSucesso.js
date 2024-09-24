@@ -61,4 +61,3 @@ const styles = StyleSheet.create({
     alignItems: 'center', // Centralizar o conteúdo do rodapé
   },
 });
-
