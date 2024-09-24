@@ -5,11 +5,11 @@ import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { useNavigation } from '@react-navigation/native';
-import supabase from './database/database'; // Importando o contexto do Supabase
+import { SupabaseContext } from './database/database'; // Importando o contexto do Supabase
 
 export default function MedicosScreen() {
   const navigation = useNavigation();
-  //const supabase = useContext(SupabaseContext); // Usando o contexto do Supabase
+  const supabase = useContext(SupabaseContext); // Usando o contexto do Supabase
   const [medicos, setMedicos] = useState([]); // Estado para armazenar os médicos
   const [idFilter, setIdFilter] = useState(''); // Estado para filtro de ID
   const [nomeFilter, setNomeFilter] = useState(''); // Estado para filtro de Nome
