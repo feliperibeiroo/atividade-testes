@@ -18,7 +18,27 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas:
 - Expo CLI
 
 
-# Instruções para execução do teste Cypress
+# Testes Cypress
+
+No presente projeto foram aplicados testes automatizados no Cypress, sendo essenciais para garantir a qualidade e a confiabilidade de aplicações web. Desse modo, cabe pontuar algumas vantagens no seu uso:
+
+1. **Detecção precoce de bugs**: permitindo que problemas sejam identificados e corrigidos mais cedo no ciclo de desenvolvimento, antes que afetem os usuários finais. 
+
+2. **Execução rápida e repetitiva**: permitindo que o mesmo conjunto de testes seja executado quantas vezes for necessário sem intervenção manual. 
+
+3. **Ambiente realista de testes**: executa os testes diretamente no navegador e emula as interações do usuário de forma precisa, fornecendo feedback imediato sobre como o aplicativo se comporta em cenários do mundo real.
+
+4. **Cobertura de testes**: possibilitando testar cenários complexos de forma consistente.
+
+5. **Facilidade de integração**: para integrar em pipelines de CI/CD (Integração e Entrega Contínua), permitindo que os testes sejam executados automaticamente em cada alteração de código, aumentando a eficiência e a segurança do processo de desenvolvimento (inclusive, foi o adotado no projeto, em decorrência da dificuldade de implantação dos testes Junit).
+
+6. **Feedback rápido para desenvolvedores**: ajudando os desenvolvedores a ajustar ou melhorar suas implementações de forma ágil.
+
+Isto posto, realizou-se alguns testes referentes ao login e à verificação de cadastro dos médicos, pacientes e consultas, como forma de verificar a conformidade do sistema.
+
+##Instruções para execução do teste Cypress
+
+Como forma de facilitar o uso, apresenta-se como iniciar o teste de login, verificação de cadastro dos médicos, pacientes e consultas, conforme o passo a passo abaixo:
 
 ```
 npm i
